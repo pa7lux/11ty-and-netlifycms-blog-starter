@@ -4,8 +4,9 @@ Built with:
 - 11ty
 - Nunjucks
 
-Extra
-Ready config for netlify CMS in `/admin` directory
+## And more
+
+config for netlify CMS in `/admin` directory
 
 ## Lounch
 
