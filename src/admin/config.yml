@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "src/static"
+public_folder: "/static"
+editor:
+  preview: false
+collections:
+  # Global data
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "Main Settings"
+        name: "main_settings"
+        delete: false
+        file: "src/data/data.json"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "ogImage", name: "ogImage", widget: "image", choose_url: true, allow_multiple: false, default: null}
+          - {label: "SEO title", name: "metaTitle", widget: "string"}
+          - {label: "SEO description", name: "metaDescription", widget: "string"}
+          - {label: "SEO keywords", name: "keywords", widget: "text"}
+      # Headings
+      - label: "Headings"
+        name: "page_headings"
+        delete: false
+        file: "src/data/staticTexts.json"
+        fields:
+          - {label: "Main Title", name: "mainTitle", widget: "string"}
+          - {label: "Sub Title", name: "subTitle", widget: "string"}
+          - {label: "Footer text", name: "footerTitle", widget: "string"}
+  - name: "posts"
+    label: "Posts"
+    folder: "src/posts"
+    create: true
+    slug: ""
+    fields:
+      - { label: "Id", name: "id", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - {label: "Image", name: "image", widget: "image", choose_url: true, allow_multiple: false, default: null}
+      - {label: "Tags", name: "tags", widget: "select", options: ["posts"], default: "posts"}

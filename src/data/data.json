@@ -1,0 +1,8 @@
+{
+  "domain": "https://example.com",
+  "keywords": "test, starter",
+  "metaTitle": "Starterkit for 11ty blog",
+  "metaDescription": "Starterkit for 11ty blog.",
+  "ogImage": "/static/og.png",
+  "title": "Starterkit for 11ty blog"
+}

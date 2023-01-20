@@ -1,0 +1,17 @@
+<section class="posts">
+  <h2 class="posts__title">{{staticTexts.subTitle}}</h2>
+  <ul class="posts-list">
+    {% for post in pagination.items %}
+      <li class="posts-list__item">
+        <a href="{{post.url}}">
+          <article class="post" id="post-{{post.data.id}}">
+            <img src="{{post.data.image}}" alt="" class="post__image">
+            <div class="post__text">
+              {{ post.templateContent | safe }}
+            </div>
+          </article>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

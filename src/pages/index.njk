@@ -1,0 +1,17 @@
+---
+eleventyComputed:
+  title: '{% if pagination.pageNumber > 0 %}Page {{ pagination.pageNumber + 1 }}{% else %}{{ data.title }}{% endif %}'
+layout: page.njk
+permalink: '{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+pagination:
+  data: collections.posts
+  size: 3
+  reverse: true
+---
+{% include 'header.njk' %}
+<main>
+  {% include 'posts-list.njk' %}
+  {% include 'pagination.njk' %}
+</main>
+{% include 'footer.njk' %}
+

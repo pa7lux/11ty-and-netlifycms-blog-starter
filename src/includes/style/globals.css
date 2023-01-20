@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 8rem;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Inter, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 320px;
+    max-width: 1440px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+p, ul, ol, li {
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: opacity .3s ease-in-out;
+}
+
+a:hover {
+    border-bottom: none;
+    opacity: .6;
+}
+
+a:active {
+    opacity: .8;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

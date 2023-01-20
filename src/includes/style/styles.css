@@ -1,0 +1,101 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.logo {
+  border-bottom: none;
+}
+
+.post {
+  border: 1px solid #1e1e1e;
+  padding: 20px;
+}
+
+.posts {
+  padding: 20px 40px;
+}
+
+.posts-list__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.posts__title {
+  margin-bottom: 20px;
+}
+
+.post {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.post__image {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post__text {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.pagination {
+  display: flex;
+  gap: 4px;
+  padding: 20px 40px;
+}
+
+.pagination__item {
+  padding: 8px;
+  border: 1px solid #1e1e1e;
+}
+
+.pagination__item:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.pagination__item a {
+  border-bottom: none;
+  
+}
+
+.footer {
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+
+.post-hero {
+  display: flex;
+  gap: 40px;
+  padding: 20px 40px;
+}
+
+.post-hero img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-content {
+  padding: 20px 40px;
+}
