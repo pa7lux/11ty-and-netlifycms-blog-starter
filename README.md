@@ -8,7 +8,7 @@ Built with:
 
 config for netlify CMS in `/admin` directory
 
-## Lounch
+## Launch it
 
 ```bash
 npm i && npm start
